@@ -240,6 +240,18 @@ footer {
 .social-links a:hover {
     color: var(--primary-color);
 }
+@supports (-webkit-touch-callout: none) {
+  .document-container {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+  }
+  
+  #pdf-viewer {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+  }
+}
 
 @media (max-width: 768px) {
     header h1 {
